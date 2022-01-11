@@ -25,8 +25,6 @@ export class HomeComponent implements OnInit {
     this.carService.getAllFB().subscribe(data=>{
       this.cars = data
       this.activeCar.push(this.cars[0])
-      console.log(this.activeCar);
-      
     })
   }
 
