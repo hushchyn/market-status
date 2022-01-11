@@ -1,1 +1,24 @@
-/* You can add global styles to this file, and also import other style files */
+@import './assets/reset.scss';
+@import './assets/variables/variables.scss';
+@font-face {
+    font-family: "Montserrat-Regular" ;
+    src: url("./assets/fonts/Montserrat/Montserrat-Regular.ttf");
+}
+
+*{
+    
+    font-family: 'Montserrat-Regular'
+}
+
+body{
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 1280px;
+}
+
+a{
+    text-decoration: none;
+    color: #999999;
+}

@@ -1,0 +1,283 @@
+.breadCrumbs {
+  margin: 20px 0 40px;
+
+  img {
+    width: 5px;
+    height: 5px;
+    margin: 0 15px;
+    opacity: 70%;
+  }
+}
+
+.cars {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+
+}
+
+.cards {
+  width: 305px;
+  height: 180px;
+  background-color: white;
+  border-radius: 6px;
+
+
+  &-head {
+    width: 100%;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  .logo {
+    width: 20px;
+    height: 15px;
+  }
+
+  .model {
+    width: 200px;
+  }
+
+  &-inform {
+    display: flex;
+    justify-content: space-evenly;
+
+    .features {
+      text-align: center;
+    }
+
+    .title {
+      font-size: 12px;
+      margin-bottom: 8px;
+    }
+  }
+
+  @media screen and(max-width:1400px) {
+    width: 264px;
+
+    .model {
+      width: 170px;
+    }
+
+  }
+
+  @media screen and(max-width:1200px) {
+    width: 226px;
+    height: 150px;
+
+    .model {
+      width: 130px;
+    }
+
+  }
+
+  @media screen and(max-width:993px) {
+    width: 338px;
+    height: 150px;
+    margin-bottom: 10px;
+
+    .model {
+      width: 150px;
+    }
+
+  }
+
+  @media screen and(max-width:768px) {
+    width: 253px;
+    height: 150px;
+    margin-bottom: 10px;
+
+    .model {
+      width: 150px;
+    }
+
+  }
+}
+
+.card {
+  width: 100%;
+  padding: 10px 20px 10px;
+  margin-top: 20px;
+  background-color: white;
+  border-radius: 6px;
+
+  img {
+    width: 130px;
+    height: 100px;
+
+    @media screen and(max-width: 768px) {
+      width: 70px;
+      height: 40px;
+    }
+
+  }
+
+  .car-model {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    p {
+      width: 300px;
+      font-size: 48px;
+      font-weight: bold;
+    }
+
+    img {
+      width: 600px;
+      height: 300px;
+
+    }
+
+    @media screen and(max-width: 993px) {
+      p {
+        width: 200px;
+        font-size: 32px;
+      }
+
+      img {
+        width: 400px;
+        height: 200px;
+      }
+
+    }
+
+    @media screen and(max-width: 768px) {
+      p {
+        width: 200px;
+        font-size: 24px;
+      }
+
+      img {
+        width: 250px;
+        height: 130px;
+      }
+
+    }
+  }
+
+  .car-details {
+    width: 100%;
+    height: 50px;
+
+    .inform-block {
+      display: flex;
+    }
+
+    .options {
+      width: 500px;
+    }
+
+    .left-section {
+      width: 280px;
+      border-right: 1px solid grey;
+      margin-right: 50px;
+
+      @media screen and(max-width: 768px) {
+        margin-right: 10px;
+
+        p {
+          font-size: 12px;
+        }
+      }
+    }
+
+
+    .first-row {
+      display: flex;
+      justify-content: space-between;
+      width: 220px;
+      margin-bottom: 10px;
+
+      img {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+      }
+
+      .miles {
+        display: flex;
+      }
+
+      .transmission {
+        display: flex;
+      }
+    }
+
+    .second-row {
+      display: flex;
+      justify-content: space-between;
+      width: 227px;
+
+      img {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+      }
+
+      .location {
+        display: flex;
+      }
+
+      .petrol {
+        display: flex;
+      }
+    }
+
+    .right-section {
+      width: 300px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      @media screen and(max-width: 768px) {
+        width: 250px;
+      }
+
+      .features {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: center;
+
+        @media screen and(max-width: 768px) {
+          margin-right: 10px;
+
+          p {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+
+    @media screen and(max-width: 1200px) {
+
+      .options {
+        width: 400px;
+      }
+    }
+
+    @media screen and(max-width: 993px) {
+
+      margin-top: 40px;
+
+      .options {
+        width: 20px;
+      }
+    }
+
+    @media screen and(max-width: 768px) {
+
+      margin-top: 40px;
+
+      .options {
+        display: none;
+      }
+    }
+  }
+}

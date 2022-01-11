@@ -1,0 +1,83 @@
+<div class="container">
+    <div class="breadCrumbs">
+        <a href="">auto.market</a>
+        <img src="assets/icons/right-arrow.png" alt="">
+        <a href="">Market Status</a>
+    </div>
+
+    <div class="cars">
+        <div class="cards" *ngFor="let car of cars" >
+            <div class="cards-head" (click)="activateCar(car)">
+                <img class="logo" [src]="car.logo" alt="">
+                <img class="model" [src]="car.image" alt="">
+                <p>Petrol</p>
+            </div>
+            <div class="cards-inform">
+                <div class="features">
+                    <p class="title">Searched</p>
+                    <p [ngStyle]="{'font-weight': 'bold'}">{{car.searched}}</p>
+                </div>
+                <div class="features">
+                    <p class="title">Visited</p>
+                    <p [ngStyle]="{'font-weight': 'bold'}">{{car.visited}}</p>
+                </div>
+                <div class="features">
+                    <p class="title">Sold</p>
+                    <p [ngStyle]="{'font-weight': 'bold'}">{{car.sold}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="" *ngFor="let c of activeCar">
+        <div class="card">
+            <img [src]="c.logo" alt="">
+            <div class="car-model">
+                <p>{{c.name}}</p>
+                <img [src]="c.image" alt="">
+            </div>
+            <div class="car-details">
+                <div class="inform-block">
+                    <div class="options"></div>
+                    <div class="left-section">
+                        <div class="first-row">
+                            <div class="miles">
+                                <img src="assets/icons/speedometer.png" alt="">
+                                <p>1,13,000 km</p>
+                            </div>
+                            <div class="transmission">
+                                <img src="assets/icons/automatic-transmission.png" alt="">
+                                <p>Auto</p>
+                            </div>
+                        </div>
+                        <div class="second-row">
+                            <div class="location">
+                                <img src="assets/icons/location.png" alt="">
+                                <p>{{c.location}}</p>
+                            </div>
+                            <div class="petrol">
+                                <img src="assets/icons/fuel-station.png" alt="">
+                                <p>{{c.petrol}}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-section">
+                        <div class="features">
+                            <p [ngStyle]="{'font-weight': 'bold'}">{{c.searched}}</p>
+                            <p class="title">Searched</p>
+                        </div>
+                        <div class="features">
+                            <p [ngStyle]="{'font-weight': 'bold'}">{{c.visited}}</p>
+                            <p class="title">Visited</p>
+                        </div>
+                        <div class="features">
+                            <p [ngStyle]="{'font-weight': 'bold'}">{{c.sold}}</p>
+                            <p class="title">Sold</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

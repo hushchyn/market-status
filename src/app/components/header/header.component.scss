@@ -1,0 +1,148 @@
+header{
+    width: 100%;
+    padding: 15px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+    @media screen and(max-width: 576px) {
+       justify-content: start;
+    }
+}
+
+.logo{
+    p{
+    font-size: 18px;
+    font-weight: bold;
+
+    }
+
+    @media screen and(max-width: 768px) {
+        width: 120px;
+        p{
+            font-size: 14px;
+        }
+    }
+
+    @media screen and(max-width: 576px) {
+        width: 180px;
+        p{
+            font-size: 28px;
+        }
+    }
+   
+
+}
+
+.navigate-link{
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+
+    &-menu{
+        display: none;
+    }
+
+    @media screen and (max-width: 1200px) {
+        width: 350px ;
+        a{
+            font-size: 14px;
+        }
+    }
+
+    @media screen and (max-width: 992px) {
+        width: 200px ;
+        a{
+           display: none;
+        }
+
+        &-menu{
+            display: block;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        width: 100px;
+        
+    }
+
+    @media screen and(max-width: 576px) {
+        display: none;
+        p{
+            font-size: 28px;
+        }
+
+        &-menu{
+            display: block;
+        }
+    }
+
+   
+
+}
+
+.profile{
+    width: 340px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img{
+        width: 15px;
+        height: 15px;
+    }
+
+    &-info{
+        width: 120px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &-photo{
+            width: 25px;
+            height: 25px;
+            border-radius: 50px;
+            background-color: orange;
+        }
+
+    }
+
+    button{
+        color: white;
+        background-color: orange;
+        border: none;
+        width: 120px;
+        height: 50px;
+        border-radius: 10px;
+    }
+
+    @media screen and(max-width: 1200px) {
+        width: 300px;
+
+        &-info{
+            width: 100px;
+        }
+
+        p{
+            font-size: 14px;
+        }
+    }
+
+    @media screen and (max-width: 992px){
+        width: 300px;
+    }
+
+    @media screen and (max-width: 576px) {
+        width: 121px;
+
+        img{
+            display: none;
+        }
+        &-info{
+            display: none;
+        }
+
+    }
+
+  
+}
